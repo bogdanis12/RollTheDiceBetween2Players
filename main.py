@@ -4,7 +4,7 @@ Player1 = input("Enter your name Player1: ")
 Player2 = input("Enter your name Player2: ")
 
 
-def role():
+def roll():
     dice1 = random.randint(1, 6)
     dice2 = random.randint(1, 6)
     if dice1 < dice2:
@@ -30,8 +30,8 @@ def replay():
 
 print('Welcome to Roll The Dice')
 while True:
-    Player1Dice = role()
-    Player2Dice = role()
+    Player1Dice = roll()
+    Player2Dice = roll()
     turn = choose_first()
     print(turn + ' will go first')
     play_game = input("Are you ready to play? Type Yes or No: ").lower()
